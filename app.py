@@ -7,7 +7,7 @@ from difflib import get_close_matches
 
 app = Flask(__name__)
 
-API_KEY = "AIzaSyCiMT35cysNSXz9HqCmcmgG3fGSXfuk3Yw"  # Keep your key safe!
+API_KEY = "Your_API_KEY" 
 GEMINI_MODEL = "models/gemini-2.0-flash:generateContent"
 
 @app.route("/")
