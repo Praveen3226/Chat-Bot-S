@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Solivox Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<!-- Launcher Button -->
+<div id="nova-launcher">Chat with Nova</div>
+
+<!-- Chat Popup -->
+<div id="chat-popup">
+  <div id="chat-header">
+    Solivox Assistant
+    <span id="close-btn" style="float: right; cursor: pointer;">❌</span>
+  </div>
+  <div id="chat-messages"></div>
+  <div id="input-container">
+    <input type="text" id="user-input" placeholder="Type your message..." />
+    <button id="send-btn">Send</button>
+  </div>
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+</html>
