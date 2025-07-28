@@ -1,0 +1,109 @@
+/* Nova Button */
+#nova-launcher {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #6a0dad;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 30px;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  z-index: 1000;
+}
+
+/* Chat Popup */
+#chat-popup {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  width: 320px;
+  max-height: 400px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  z-index: 1001;
+}
+
+
+#chat-header {
+  background-color: #6a0dad;
+  color: white;
+  padding: 12px;
+  font-weight: bold;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#chat-messages {
+    padding: 12px;
+    height: 250px;
+    overflow-y: auto;
+    font-size: 14px;
+}
+
+#chat-input {
+    padding: 10px;
+    width: 70%;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+#close-btn {
+  margin-left: auto;
+  color: white;
+  font-size: 16px;
+  padding: 0 8px;
+}
+
+#input-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  background: #fff;
+}
+
+#user-input {
+  flex: 1;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+#send-btn {
+  padding: 10px 20px;
+  background: #6a0dad;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+  .message {
+    margin: 10px 0;
+    display: flex;
+    align-items: flex-start;
+  }
+  .message .icon {
+    margin-right: 8px;
+    font-size: 1.2rem;
+  }
+  .markdown {
+    background: #f4f4f4;
+    padding: 8px 12px;
+    border-radius: 8px;
+    max-width: 80%;
+    white-space: pre-wrap;
+    font-family: "Segoe UI", sans-serif;
+  }
